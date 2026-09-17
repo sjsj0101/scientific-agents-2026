@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-09-17",
+  "language": "zh-CN",
+  "description": "精选科研 agent 文献索引：Nature、Science 及计算机会议，含研究论文与单列的观点文章。",
+  "provenance": {
+    "source": "2026-09-17 科研 agent 文献综述",
+    "import_date": "2026-09-17",
+    "metadata_basis": "source_review_2026-09-17",
+    "independently_reverified_on_import": false,
+    "experiments_independently_reproduced": false,
+    "note": "发表信息与定量结论沿用原综述；title 保留原条目标题或简称，缺失信息不补猜。venue_reference_url 指向原综述引用的文章页或官方会议目录，不等同于独立逐项复核。"
+  },
+  "reading_order": [
+    "paper2agent",
+    "astabench",
+    "execution-grounded-research",
+    "scinet",
+    "causcibench",
+    "autoexperiment",
+    "badscientist"
+  ],
+  "papers": [
+    {
+      "id": "ai-scientist",
+      "title": "Towards end-to-end automation of AI research",
+      "short_name": "The AI Scientist",
+      "year": 2026,
+      "venue": "Nature",
+      "publication_type": "journal-research",
+      "publication_date": "2026-03-25",
+      "venue_note": null,
+      "url": "https://www.nature.com/articles/s41586-026-10265-5",
+      "venue_reference_url": "https://www.nature.com/articles/s41586-026-10265-5",
+      "summary_zh": "串联想法生成、编程、实验、作图、论文写作和自动评审；包含模板驱动与无模板的实验搜索。 是理解完整科研流水线的基础论文。但生成论文通过的是录用率约 70% 的 workshop 第一轮评审，不能解读为达到顶会主会水平。",
+      "tags": [
+        "end-to-end",
+        "writing",
+        "evaluation"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "co-scientist",
+      "title": "Accelerating scientific discovery with Co-Scientist",
+      "short_name": "Co-Scientist",
+      "year": 2026,
+      "venue": "Nature",
+      "publication_type": "journal-research",
+      "publication_date": "2026-05-19",
+      "venue_note": null,
+      "url": "https://www.nature.com/articles/s41586-026-10644-y",
+      "venue_reference_url": "https://www.nature.com/articles/s41586-026-10644-y",
+      "summary_zh": "多个 agent 分别生成、批评、排序和演化假设，通过锦标赛机制持续改进。 核心是假设搜索与筛选。在药物再利用、肝纤维化靶点和抗菌药物耐药机制上进行了验证；研究者仍参与目标设定、方向选择及实验验证。",
+      "tags": [
+        "hypothesis-generation"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "robin",
+      "title": "A multi-agent system for automating scientific discovery",
+      "short_name": "Robin",
+      "year": 2026,
+      "venue": "Nature",
+      "publication_type": "journal-research",
+      "publication_date": "2026-05-19",
+      "venue_note": null,
+      "url": "https://www.nature.com/articles/s41586-026-10652-y",
+      "venue_reference_url": "https://www.nature.com/articles/s41586-026-10652-y",
+      "summary_zh": "将文献检索、假设生成、实验建议和数据分析连接起来，再根据实验结果提出新假设。 在干性年龄相关性黄斑变性研究中提出候选药物并获得体外实验支持。突出的是实验反馈驱动下一轮发现；湿实验和详细实验协议仍依赖人类。",
+      "tags": [
+        "experiment-feedback",
+        "biomedicine"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "era",
+      "title": "An AI system to help scientists write expert-level empirical software",
+      "short_name": "ERA",
+      "year": 2026,
+      "venue": "Nature",
+      "publication_type": "journal-research",
+      "publication_date": "2026-05-19",
+      "venue_note": null,
+      "url": "https://www.nature.com/articles/s41586-026-10658-6",
+      "venue_reference_url": "https://www.nature.com/articles/s41586-026-10658-6",
+      "summary_zh": "用 LLM 与树搜索反复生成、运行和改进科研代码，并引入外部文献中的研究思路。 在单细胞分析、疾病预测等任务中找到超过比较基线的方法。适用于有明确可计算评价指标的科研任务，不能直接外推到所有开放式科学问题。",
+      "tags": [
+        "code-search",
+        "execution"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "paper2agent",
+      "title": "Reimagining research papers as interactive and reliable AI agents",
+      "short_name": "Paper2Agent",
+      "year": 2026,
+      "venue": "Nature",
+      "publication_type": "journal-research",
+      "publication_date": "2026-09-16",
+      "venue_note": null,
+      "url": "https://www.nature.com/articles/s41586-026-11044-y",
+      "venue_reference_url": "https://www.nature.com/articles/s41586-026-11044-y",
+      "summary_zh": "将论文、代码、数据及工作流封装为可调用的 MCP 服务，并自动生成和执行测试。 把论文变成可以询问、运行、应用到新数据上的“交互式研究助手”；展示了结果复现及多篇论文 agent 协作分析。重点是研究成果复用与组合。",
+      "tags": [
+        "reproducibility",
+        "research-reuse"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "agentic-ai-intelligence-explosion",
+      "title": "Agentic AI and the next intelligence explosion",
+      "short_name": "Agentic AI and the next intelligence explosion",
+      "year": 2026,
+      "venue": "Science",
+      "publication_type": "perspective",
+      "publication_date": "2026-03-19",
+      "venue_note": "观点性文章",
+      "url": "https://doi.org/10.1126/science.aeg1895",
+      "venue_reference_url": "https://doi.org/10.1126/science.aeg1895",
+      "summary_zh": "讨论智能如何从多个 agent 与人类之间的分工、争辩和制度化协作中产生，适合作为科研组织形态的背景阅读；属于观点性文章。",
+      "tags": [
+        "multi-agent",
+        "research-organization"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "xray-scientist",
+      "title": "An agentic artificially intelligent X-ray scientist",
+      "short_name": "X-ray scientist",
+      "year": 2026,
+      "venue": "Nature Machine Intelligence",
+      "publication_type": "journal-research",
+      "publication_date": "2026-07-01",
+      "venue_note": null,
+      "url": "https://www.nature.com/articles/s42256-026-01261-5",
+      "venue_reference_url": "https://www.nature.com/articles/s42256-026-01261-5",
+      "summary_zh": "根据仪器观测规划并调整 X 射线样品对准操作，从模拟环境走到真实同步辐射设施。真实束线演示中的指令由人类转交执行，证明的是具体实验任务中的自主决策能力。",
+      "tags": [
+        "instrument-control",
+        "experiment-feedback"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "deepscientist",
+      "title": "DeepScientist: Advancing Frontier-Pushing Scientific Findings Progressively",
+      "short_name": "DeepScientist",
+      "year": 2026,
+      "venue": "ICLR",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "ICLR 2026",
+      "url": "https://iclr.cc/virtual/2026/poster/10008492",
+      "venue_reference_url": "https://iclr.cc/virtual/2026/poster/10008492",
+      "summary_zh": "以贝叶斯优化和累计研究记忆组织长时间实验搜索。作者报告使用超过 2 万 GPU 小时，在三个 AI 任务上超过比较基线。适合研究长期运行、经验积累与算力预算。",
+      "tags": [
+        "long-horizon-search",
+        "research-memory"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "sr-scientist",
+      "title": "SR-Scientist: Scientific Equation Discovery With Agentic AI",
+      "short_name": "SR-Scientist",
+      "year": 2026,
+      "venue": "ICLR",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "ICLR 2026",
+      "url": "https://iclr.cc/virtual/2026/poster/10010150",
+      "venue_reference_url": "https://iclr.cc/virtual/2026/poster/10010150",
+      "summary_zh": "agent 自主分析数据、实现方程、调用评价工具并根据反馈优化，还探索强化学习训练。适合研究可解释公式发现与工具执行闭环。",
+      "tags": [
+        "equation-discovery",
+        "tool-use"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "astabench",
+      "title": "AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite",
+      "short_name": "AstaBench",
+      "year": 2026,
+      "venue": "ICLR",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "ICLR 2026，Oral",
+      "url": "https://iclr.cc/virtual/2026/poster/10009971",
+      "venue_reference_url": "https://iclr.cc/virtual/2026/poster/10009971",
+      "summary_zh": "覆盖 2,400 多个科研问题，强调检索工具、成本和实验条件可控。评估 57 个 agent，表明科研辅助仍存在明显缺口。适合建立完整系统的评价框架。",
+      "tags": [
+        "evaluation"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "scienceboard",
+      "title": "ScienceBoard",
+      "short_name": "ScienceBoard",
+      "year": 2026,
+      "venue": "ICLR",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "ICLR 2026",
+      "url": "https://iclr.cc/virtual/2026/poster/10008621",
+      "venue_reference_url": "https://iclr.cc/virtual/2026/poster/10008621",
+      "summary_zh": "提供包含专业软件的真实科研工作环境和 169 个任务。论文受测模型总体成功率约 15%，揭示跨软件、多模态、多步骤执行的困难。",
+      "tags": [
+        "evaluation",
+        "tool-use"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "autoexperiment",
+      "title": "From Reproduction to Replication: Evaluating Research Agents with Progressive Code Masking",
+      "short_name": "AutoExperiment",
+      "year": 2026,
+      "venue": "ICLR",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "ICLR 2026",
+      "url": "https://iclr.cc/virtual/2026/poster/10007273",
+      "venue_reference_url": "https://iclr.cc/virtual/2026/poster/10007273",
+      "summary_zh": "提出 AutoExperiment，逐步遮蔽论文代码，测试从运行现成代码到重新实现实验的能力。缺失代码越多，表现下降越快；适合研究复现能力如何分级测量。",
+      "tags": [
+        "evaluation",
+        "replication"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "ideation-execution-gap",
+      "title": "The Ideation-Execution Gap",
+      "short_name": "The Ideation-Execution Gap",
+      "year": 2026,
+      "venue": "ICLR",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "ICLR 2026",
+      "url": "https://iclr.cc/virtual/2026/poster/10010564",
+      "venue_reference_url": "https://iclr.cc/virtual/2026/poster/10010564",
+      "summary_zh": "招募 43 位专家，每人投入超过 100 小时执行随机分配的人类或 LLM 想法。LLM 想法在执行后的评价下降更明显，说明想法看起来新颖，未必带来更好的研究结果。",
+      "tags": [
+        "ideation",
+        "evaluation"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "execution-grounded-research",
+      "title": "Towards Execution-Grounded Automated AI Research",
+      "short_name": "Towards Execution-Grounded Automated AI Research",
+      "year": 2026,
+      "venue": "ICML",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "ICML 2026",
+      "url": "https://arxiv.org/abs/2601.14525",
+      "venue_reference_url": "https://icml.cc/Downloads/2026",
+      "summary_zh": "自动实现想法并运行 GPU 实验，以执行结果指导演化搜索或强化学习。在所测环境中，演化搜索有效，强化学习则出现模式坍缩。适合研究如何用真实结果训练和改进 ideation。",
+      "tags": [
+        "execution",
+        "ideation"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "mars",
+      "title": "MARS: Modular Agent with Reflective Search for Automated AI Research",
+      "short_name": "MARS",
+      "year": 2026,
+      "venue": "ICML",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "ICML 2026",
+      "url": "https://arxiv.org/abs/2602.02660",
+      "venue_reference_url": "https://icml.cc/Downloads/2026",
+      "summary_zh": "结合考虑成本的树搜索、模块化代码实现和比较式反思记忆，在 MLE-Bench 上评估。适合研究实验成本控制及不同搜索分支之间的经验迁移。",
+      "tags": [
+        "search",
+        "cost",
+        "research-memory"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "scinet",
+      "title": "SciNet: Evaluating AI Agents in Relation-Aware Scientific Literature Retrieval",
+      "short_name": "SciNet",
+      "year": 2026,
+      "venue": "ICML",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "ICML 2026",
+      "url": "https://arxiv.org/abs/2601.03260",
+      "venue_reference_url": "https://icml.cc/Downloads/2026",
+      "summary_zh": "评估 agent 能否理解论文之间的支持、批评、知识组合和技术发展关系。包含 8,940 个任务，强调文献检索不能只匹配关键词或语义相似度。",
+      "tags": [
+        "literature-retrieval",
+        "evaluation"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "sciagentgym",
+      "title": "SciAgentGym",
+      "short_name": "SciAgentGym",
+      "year": 2026,
+      "venue": "ICML",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "ICML 2026",
+      "url": "https://arxiv.org/abs/2602.12984",
+      "venue_reference_url": "https://icml.cc/Downloads/2026",
+      "summary_zh": "提供 1,780 个科学工具与分层任务，并通过工具依赖关系合成训练轨迹。重点是多步骤科学工具调用能力及其训练方法。",
+      "tags": [
+        "tool-use",
+        "evaluation"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "causcibench",
+      "title": "CauSciBench",
+      "short_name": "CauSciBench",
+      "year": 2026,
+      "venue": "ICML",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "ICML 2026",
+      "url": "https://github.com/causalNLP/CauSciBench",
+      "venue_reference_url": "https://icml.cc/Downloads/2026",
+      "summary_zh": "评估从问题理解、变量选择、因果方法选择，到代码执行和统计解释的完整流程。对社会科学、经济学及实证研究 agent尤其相关。",
+      "tags": [
+        "causal-inference",
+        "evaluation"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "badscientist",
+      "title": "BadScientist: Can a Research Agent Write Convincing but Unsound Papers that Fool LLM Reviewers?",
+      "short_name": "BadScientist",
+      "year": 2026,
+      "venue": "ACL",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "ACL 2026 主会",
+      "url": "https://aclanthology.org/2026.acl-long.1134/",
+      "venue_reference_url": "https://aclanthology.org/2026.acl-long.1134/",
+      "summary_zh": "在受测自动评审设置中，虚构论文可获得很高的接受评分。揭示自动评审分数不能代替实验真实性和证据核查；这里的“接受”不是真实会议录用。",
+      "tags": [
+        "review",
+        "research-integrity"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "researchenvbench",
+      "title": "ResearchEnvBench",
+      "short_name": "ResearchEnvBench",
+      "year": 2026,
+      "venue": "IJCAI",
+      "publication_type": "conference-paper",
+      "publication_date": null,
+      "venue_note": "IJCAI 2026",
+      "url": "https://arxiv.org/abs/2603.06739",
+      "venue_reference_url": "https://www.ijcai.org/proceedings/2026/",
+      "summary_zh": "专门测试 agent 能否为研究代码搭建可运行环境，暴露依赖解析和版本耦合问题。补上科研复现中常被忽略的环境准备能力。",
+      "tags": [
+        "environment-setup",
+        "replication"
+      ],
+      "metadata_basis": "source_review_2026-09-17"
+    }
+  ]
+}
