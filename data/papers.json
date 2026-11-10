@@ -380,6 +380,60 @@
         "replication"
       ],
       "metadata_basis": "source_review_2026-09-17"
+    },
+    {
+      "id": "agentic-ai-primer",
+      "title": "Agentic AI systems for scientific discovery",
+      "short_name": "Agentic AI Primer",
+      "year": 2026,
+      "venue": "Nature Reviews Methods Primers",
+      "publication_type": "review",
+      "publication_date": "2026-10-22",
+      "venue_note": "Primer；方法综述，不是新的自主科研系统实证结果。",
+      "url": "https://www.nature.com/articles/s43586-026-00534-y",
+      "venue_reference_url": "https://www.nature.com/articles/s43586-026-00534-y",
+      "authors": [
+        "Bin Feng",
+        "Peter Walther",
+        "Leili Zhang",
+        "Reid A. Coyle",
+        "Seongmin Kim",
+        "Abhijoy Mandal",
+        "Zijian Zhang",
+        "Sven M. Papidocha",
+        "Anna Kelmanson",
+        "David Ming Segura",
+        "Saumya Thakur",
+        "Shyam Chand Pal",
+        "Varinia Bernales",
+        "Wenhao Gao",
+        "Xin Yang",
+        "Le Cong",
+        "Philippe Schwaller",
+        "Alán Aspuru-Guzik",
+        "Zhiling Zheng"
+      ],
+      "doi": "10.1038/s43586-026-00534-y",
+      "summary_zh": "梳理科研 agent 的任务拆解、记忆、工具与协作架构，连接文献检索、物理模拟和自动实验。适合作为系统设计与可复现报告的入口；这是方法 Primer，不应当成端到端自主科研能力已经普遍成立的实验证据。本文同时讨论幻觉、工具误用、可解释性与安全限制。",
+      "tags": [
+        "review",
+        "workflows",
+        "evaluation",
+        "human-in-the-loop"
+      ],
+      "metadata_basis": "official-publisher-page",
+      "verified_on": "2026-11-10",
+      "evidence_level": "abstract",
+      "verification_note_zh": "直接核验出版商页面的作者顺序、Primer类型、2026-10-22、卷6文章81及DOI；内容短评基于官方摘要，未读付费全文、未复现实验。"
+    }
+  ],
+  "incremental_updates": [
+    {
+      "checked_on": "2026-11-10",
+      "added_ids": [
+        "agentic-ai-primer"
+      ],
+      "scope_zh": "新增一篇正式发表的科研agent方法Primer；不重新核验原20篇，不刷新原检索快照。"
     }
   ]
 }
