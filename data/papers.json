@@ -425,6 +425,39 @@
       "verified_on": "2026-11-10",
       "evidence_level": "abstract",
       "verification_note_zh": "直接核验出版商页面的作者顺序、Primer类型、2026-10-22、卷6文章81及DOI；内容短评基于官方摘要，未读付费全文、未复现实验。"
+    },
+    {
+      "id": "aide-scientific-data",
+      "title": "Agentic intelligent data engine for scientific large language models",
+      "short_name": "AIDE",
+      "authors": [
+        "Shufang Xie",
+        "Zequn Liu",
+        "Pan Deng",
+        "Renqian Luo",
+        "Yingce Xia",
+        "Tao Qin",
+        "Rui Yan"
+      ],
+      "year": 2026,
+      "venue": "Nature Communications",
+      "publication_type": "journal-research",
+      "publication_status": "accepted",
+      "publication_date": "2026-11-04",
+      "venue_note": "出版社提前公开的已同行评审接收稿，尚非最终Version of Record；正式卷期和文章编号未猜填。",
+      "url": "https://www.nature.com/articles/s41467-026-78887-x",
+      "venue_reference_url": "https://www.nature.com/articles/s41467-026-78887-x",
+      "doi": "10.1038/s41467-026-78887-x",
+      "summary_zh": "以多agent连接数据收集、筛选和组织，将科学数据需求转成可训练的数据集。论文在生物医学与化学任务中比较自动整理与人工整理数据的模型表现，重点是科研数据准备而非完整自主发现。结果限于作者受测任务；未独立复现。",
+      "tags": [
+        "data-curation",
+        "workflows",
+        "evaluation"
+      ],
+      "metadata_basis": "official-publisher-page",
+      "verified_on": "2026-11-11",
+      "evidence_level": "abstract",
+      "verification_note_zh": "直接核验官方文章页的七位作者、DOI、2026-10-07接收及2026-11-04提前公开日期；页面明确该版本仍会编辑并替换为最终VoR。短评仅据摘要，不声称已读全文；未确认可关联的公开代码URL。"
     }
   ],
   "incremental_updates": [
@@ -434,6 +467,13 @@
         "agentic-ai-primer"
       ],
       "scope_zh": "新增一篇正式发表的科研agent方法Primer；不重新核验原20篇，不刷新原检索快照。"
+    },
+    {
+      "checked_on": "2026-11-11",
+      "added_ids": [
+        "aide-scientific-data"
+      ],
+      "scope_zh": "补接2026-11-04官方提前公开接收稿；保留原2026-09-17基线与各旧条目的核验状态。"
     }
   ]
 }

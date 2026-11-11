@@ -2,22 +2,23 @@
 
 面向科研 agent 的精选文献综述，覆盖文献检索、假设生成、实验执行、复现和研究可信度。
 
-**收录 21 篇 · 基础快照 2026-09-17 · 定向增补 2026-11-10 · 中文导读**
+**收录 22 篇 · 基础快照 2026-09-17 · 最近定向增补 2026-11-11 · 中文导读**
 
 | 来源 | 条目数 |
 |---|---:|
 | Nature 主刊 | 5 |
 | Nature Machine Intelligence | 1 |
+| Nature Communications（早期接收稿） | 1 |
 | Nature Reviews Methods Primers（Primer） | 1 |
 | Science 观点文章 | 1 |
 | ICLR 2026 | 6 |
 | ICML 2026 | 5 |
 | ACL 2026 | 1 |
 | IJCAI 2026 | 1 |
-| **合计** | **21** |
+| **合计** | **22** |
 
 - 本页：完整中文综述、论文链接、能力边界与阅读顺序。
-- [结构化论文索引](data/papers.json)：21 条论文元数据，支持按 venue、publication_type 和 tags 筛选。
+- [结构化论文索引](data/papers.json)：22 条论文元数据，支持按 venue、publication_type 和 tags 筛选。
 - [维护说明](CONTRIBUTING.md)：收录标准、元数据含义及更新方式。
 - [更新记录](CHANGELOG.md)：快照版本与验证范围。
 
@@ -55,6 +56,10 @@
 ## Nature 子刊
 
 补充阅读 **[An agentic artificially intelligent X-ray scientist](https://www.nature.com/articles/s42256-026-01261-5)**，发表于 **Nature Machine Intelligence，7 月 1 日**。它让 agent 根据仪器观测规划并调整 X 射线样品对准操作，从模拟环境走到真实同步辐射设施。值得注意的是，真实束线演示中的指令由人类转交执行，以满足设施要求；它证明的是具体实验任务中的自主决策能力。
+
+### 科研数据准备：AIDE（2026-11-11 定向增补）
+
+[Agentic intelligent data engine for scientific large language models](https://www.nature.com/articles/s41467-026-78887-x)，Nature Communications，2026-11-04提前公开的**已同行评审接收稿，尚非最终VoR**。多agent把数据收集、筛选和组织串成训练数据准备流程，在生物医学与化学任务中与人工整理数据作比较。它支持科研数据准备，不等于完整自主发现能力；本轮核验官方元数据与摘要，未通读全文或复现实验，未确认公开代码链接。
 
 ### 方法 Primer（2026-11-10 定向增补）
 
