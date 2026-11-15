@@ -458,6 +458,39 @@
       "verified_on": "2026-11-11",
       "evidence_level": "abstract",
       "verification_note_zh": "直接核验官方文章页的七位作者、DOI、2026-10-07接收及2026-11-04提前公开日期；页面明确该版本仍会编辑并替换为最终VoR。短评仅据摘要，不声称已读全文；未确认可关联的公开代码URL。"
+    },
+    {
+      "id": "instrument-learning-agents",
+      "title": "Operating advanced scientific instruments with AI agents that learn on the job",
+      "short_name": "Instrument Agents",
+      "authors": [
+        "Aikaterini Vriza",
+        "Michael H. Prince",
+        "Tao Zhou",
+        "Henry Chan",
+        "Mathew J. Cherukara"
+      ],
+      "year": 2026,
+      "venue": "npj Computational Materials",
+      "publication_type": "journal-research",
+      "publication_status": "published",
+      "publication_date": "2026-03-06",
+      "venue_note": "Nature Portfolio子刊，非Nature主刊；12卷文章160。",
+      "url": "https://www.nature.com/articles/s41524-026-02005-0",
+      "venue_reference_url": "https://www.nature.com/articles/s41524-026-02005-0",
+      "doi": "10.1038/s41524-026-02005-0",
+      "code_url": "https://github.com/AdvancedPhotonSource/CALMS/tree/sdl_agents",
+      "summary_zh": "把LLM agent用于X射线纳米探针束线和材料设计机器人站，连接自然语言、工具操作与迭代学习，并保留人在回路中的输入。贡献是科研仪器工作流的可操作性与适应性，不是无需监督的通用自主发现；受测设施与任务限制外推。",
+      "tags": [
+        "instrument-control",
+        "human-in-the-loop",
+        "workflows",
+        "evaluation"
+      ],
+      "metadata_basis": "official-publisher-page",
+      "verified_on": "2026-11-15",
+      "evidence_level": "abstract",
+      "verification_note_zh": "普通只读请求直接取得官方文章页：核验五位作者、2026-03-06、12卷文章160和DOI；短评只读摘要。官方正文明确链接CALMS的sdl_agents分支，已打开目录、未安装或执行。Web页面抓取先遇cookie跳转，普通公开GET成功，无绕过访问验证。"
     }
   ],
   "incremental_updates": [
@@ -474,6 +507,13 @@
         "aide-scientific-data"
       ],
       "scope_zh": "补接2026-11-04官方提前公开接收稿；保留原2026-09-17基线与各旧条目的核验状态。"
+    },
+    {
+      "checked_on": "2026-11-15",
+      "added_ids": [
+        "instrument-learning-agents"
+      ],
+      "scope_zh": "定向补接候选，不刷新原全库基线或其他论文核验日；未复现实验。"
     }
   ]
 }
