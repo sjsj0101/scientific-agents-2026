@@ -2,11 +2,12 @@
 
 面向科研 agent 的精选文献综述，覆盖文献检索、假设生成、实验执行、复现和研究可信度。
 
-**收录 23 篇 · 基础快照 2026-09-17 · 最近定向增补 2026-11-15 · 中文导读**
+**收录 25 篇 · 基础快照 2026-09-17 · 最近定向增补 2026-11-21 · 中文导读**
 
 | 来源 | 条目数 |
 |---|---:|
-| Nature 主刊 | 5 |
+| Nature 主刊 | 6 |
+| Nature Computational Science | 1 |
 | Nature Machine Intelligence | 1 |
 | npj Computational Materials | 1 |
 | Nature Communications（早期接收稿） | 1 |
@@ -16,10 +17,10 @@
 | ICML 2026 | 5 |
 | ACL 2026 | 1 |
 | IJCAI 2026 | 1 |
-| **合计** | **23** |
+| **合计** | **25** |
 
 - 本页：完整中文综述、论文链接、能力边界与阅读顺序。
-- [结构化论文索引](data/papers.json)：23 条论文元数据，支持按 venue、publication_type 和 tags 筛选。
+- [结构化论文索引](data/papers.json)：25 条论文元数据，支持按 venue、publication_type 和 tags 筛选。
 - [维护说明](CONTRIBUTING.md)：收录标准、元数据含义及更新方式。
 - [更新记录](CHANGELOG.md)：快照版本与验证范围。
 
@@ -50,6 +51,10 @@
 
 这五篇可以对应科研流程中的五个问题：**完整流程怎么组织、假设怎么改进、实验反馈怎么利用、计算方法怎么搜索、已有成果怎么复用。**
 
+### AutoDNA（2026-11-21 定向增补）
+
+[An AI-native experimental laboratory for autonomous biomolecular operations](https://www.nature.com/articles/s41586-026-11228-6)，Nature，2026-11-04。通过模型、实验和仪器的共同设计，把多用户请求、实验调度与核酸操作接成可执行工作流。作者在核酸合成、测序等受测任务中展示跨仪器执行；人员仍负责硬件维护和耗材补给，不能视为任意生物实验的无人自主发现。 本轮仅读摘要及数据/代码声明，[官方声明的代码](https://github.com/IPADS-X/AutoDNA)已确认、未执行；不刷新基础快照或旧条目核验状态。
+
 ## Science 观点文章
 
 原检索收录的相关文章是 **James Evans 等人的 [Agentic AI and the next intelligence explosion](https://doi.org/10.1126/science.aeg1895)**，发表于 **3 月 19 日**。它是一篇观点性文章，讨论智能如何从多个 agent 与人类之间的分工、争辩和制度化协作中产生，适合作为科研组织形态的背景阅读。**本轮尚未核实到可以与上述五篇并列的、2026 年 Science 主刊科研 agent 系统原始研究**；这不代表确定不存在。
@@ -69,6 +74,10 @@
 ### 方法 Primer（2026-11-10 定向增补）
 
 [Agentic AI systems for scientific discovery](https://www.nature.com/articles/s43586-026-00534-y)，Nature Reviews Methods Primers，2026-10-22。梳理任务拆解、记忆、工具调用和多 agent 协作，连接文献、模拟与自动实验，并讨论可复现报告、幻觉和工具安全。它是**方法综述**，不是新增系统的能力验证；本轮核验官方元数据与摘要，未通读全文或复现实验。原20篇的继承来源与2026-09-17基础快照保持不变，本次并非全量补查9月以来的成果。
+
+### MOFGen（2026-11-21 定向增补）
+
+[System of agentic AI for the discovery of metal–organic frameworks](https://www.nature.com/articles/s43588-026-01058-x)，Nature Computational Science，2026-11-20。连接LLM成分提议、扩散结构生成、量子化学筛选与合成可行性判断，探索可制备的金属有机框架。正式论文报告合成四种候选；实验集中于锌基体系，合成仍依赖人类，不能把计算筛选流水线等同于全自动实验室。 本轮读摘要、Discussion和数据/代码声明；[代码](https://github.com/tjaffrel/mofgen)已确认、未运行。正式版与旧预印本为同一研究，按正式版描述，不混用结果。
 
 ## 计算机会议
 

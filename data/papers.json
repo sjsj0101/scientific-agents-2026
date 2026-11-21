@@ -491,6 +491,91 @@
       "verified_on": "2026-11-15",
       "evidence_level": "abstract",
       "verification_note_zh": "普通只读请求直接取得官方文章页：核验五位作者、2026-03-06、12卷文章160和DOI；短评只读摘要。官方正文明确链接CALMS的sdl_agents分支，已打开目录、未安装或执行。Web页面抓取先遇cookie跳转，普通公开GET成功，无绕过访问验证。"
+    },
+    {
+      "id": "autodna-biomolecular-lab",
+      "title": "An AI-native experimental laboratory for autonomous biomolecular operations",
+      "short_name": "AutoDNA",
+      "authors": [
+        "Mingyu Wu",
+        "Zhaoguo Wang",
+        "Jiabin Wang",
+        "Zhiyuan Dong",
+        "Jingkai Yang",
+        "Qingting Li",
+        "Tianyu Huang",
+        "Chi Zhang",
+        "Ping Song",
+        "Lei Zhao",
+        "Mingqiang Li",
+        "Xiaolei Zuo",
+        "Fei Wang",
+        "Chunhai Fan",
+        "Haibo Chen"
+      ],
+      "year": 2026,
+      "venue": "Nature",
+      "publication_type": "journal-research",
+      "publication_status": "published",
+      "publication_date": "2026-11-04",
+      "url": "https://www.nature.com/articles/s41586-026-11228-6",
+      "venue_reference_url": "https://www.nature.com/articles/s41586-026-11228-6",
+      "doi": "10.1038/s41586-026-11228-6",
+      "code_url": "https://github.com/IPADS-X/AutoDNA",
+      "summary_zh": "通过模型、实验和仪器的共同设计，把多用户请求、实验调度与核酸操作接成可执行工作流。作者在核酸合成、测序等受测任务中展示跨仪器执行；人员仍负责硬件维护和耗材补给，不能视为任意生物实验的无人自主发现。",
+      "tags": [
+        "workflows",
+        "instrument-control",
+        "human-in-the-loop",
+        "evaluation"
+      ],
+      "metadata_basis": "official-publisher-page",
+      "verified_on": "2026-11-21",
+      "evidence_level": "abstract",
+      "verification_note_zh": "普通公开GET直接核验官方作者顺序、发表日期、DOI、摘要及代码声明；Web抓取遇cookie跳转，未绕过验证。代码仓库已打开、未执行。仅读摘要及数据/代码声明，不外推到未经测试的任务。"
+    },
+    {
+      "id": "mofgen-agentic-materials",
+      "title": "System of agentic AI for the discovery of metal–organic frameworks",
+      "short_name": "MOFGen",
+      "authors": [
+        "Théo Jaffrelot Inizan",
+        "Sherry Yang",
+        "Aaron Kaplan",
+        "Yen-hsu Lin",
+        "Jian Yin",
+        "Saber Mirzaei",
+        "Mona Abdelgaid",
+        "Ali H. Alawadhi",
+        "KwangHwan Cho",
+        "Zhiling Zheng",
+        "Ekin Dogus Cubuk",
+        "Christian Borgs",
+        "Jennifer T. Chayes",
+        "Kristin A. Persson",
+        "Omar M. Yaghi"
+      ],
+      "year": 2026,
+      "venue": "Nature Computational Science",
+      "publication_type": "journal-research",
+      "publication_status": "published",
+      "publication_date": "2026-11-20",
+      "url": "https://www.nature.com/articles/s43588-026-01058-x",
+      "venue_reference_url": "https://www.nature.com/articles/s43588-026-01058-x",
+      "doi": "10.1038/s43588-026-01058-x",
+      "code_url": "https://github.com/tjaffrel/mofgen",
+      "summary_zh": "连接LLM成分提议、扩散结构生成、量子化学筛选与合成可行性判断，探索可制备的金属有机框架。正式论文报告合成四种候选；实验集中于锌基体系，合成仍依赖人类，不能把计算筛选流水线等同于全自动实验室。",
+      "tags": [
+        "workflows",
+        "materials-discovery",
+        "human-in-the-loop",
+        "evaluation"
+      ],
+      "metadata_basis": "official-publisher-page",
+      "verified_on": "2026-11-21",
+      "evidence_level": "selected-full-text",
+      "verification_note_zh": "普通公开GET直接核验官方作者顺序、发表日期、DOI、摘要及代码声明；Web抓取遇cookie跳转，未绕过验证。代码仓库已打开、未执行。另读Discussion；正式版合成四种，旧预印本摘要为五种，本条按正式版，不重复计数或混用版本结果。",
+      "arxiv_id": "2504.14110"
     }
   ],
   "incremental_updates": [
@@ -514,6 +599,14 @@
         "instrument-learning-agents"
       ],
       "scope_zh": "定向补接候选，不刷新原全库基线或其他论文核验日；未复现实验。"
+    },
+    {
+      "checked_on": "2026-11-21",
+      "added_ids": [
+        "autodna-biomolecular-lab",
+        "mofgen-agentic-materials"
+      ],
+      "scope_zh": "定向补接AutoDNA与新发表MOFGen；分别归Nature与Nature Computational Science，原20篇继承证据与2026-09-17基线不变。"
     }
   ]
 }
