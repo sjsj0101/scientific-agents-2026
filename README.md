@@ -2,13 +2,13 @@
 
 面向科研 agent 的精选文献综述，覆盖文献检索、假设生成、实验执行、复现和研究可信度。
 
-**收录 25 篇 · 基础快照 2026-09-17 · 最近定向增补 2026-11-21 · 中文导读**
+**收录 26 篇 · 基础快照 2026-09-17 · 最近定向增补 2026-11-22 · 中文导读**
 
 | 来源 | 条目数 |
 |---|---:|
 | Nature 主刊 | 6 |
 | Nature Computational Science | 1 |
-| Nature Machine Intelligence | 1 |
+| Nature Machine Intelligence | 2 |
 | npj Computational Materials | 1 |
 | Nature Communications（早期接收稿） | 1 |
 | Nature Reviews Methods Primers（Primer） | 1 |
@@ -17,10 +17,10 @@
 | ICML 2026 | 5 |
 | ACL 2026 | 1 |
 | IJCAI 2026 | 1 |
-| **合计** | **25** |
+| **合计** | **26** |
 
 - 本页：完整中文综述、论文链接、能力边界与阅读顺序。
-- [结构化论文索引](data/papers.json)：25 条论文元数据，支持按 venue、publication_type 和 tags 筛选。
+- [结构化论文索引](data/papers.json)：26 条论文元数据，支持按 venue、publication_type 和 tags 筛选。
 - [维护说明](CONTRIBUTING.md)：收录标准、元数据含义及更新方式。
 - [更新记录](CHANGELOG.md)：快照版本与验证范围。
 
@@ -78,6 +78,10 @@
 ### MOFGen（2026-11-21 定向增补）
 
 [System of agentic AI for the discovery of metal–organic frameworks](https://www.nature.com/articles/s43588-026-01058-x)，Nature Computational Science，2026-11-20。连接LLM成分提议、扩散结构生成、量子化学筛选与合成可行性判断，探索可制备的金属有机框架。正式论文报告合成四种候选；实验集中于锌基体系，合成仍依赖人类，不能把计算筛选流水线等同于全自动实验室。 本轮读摘要、Discussion和数据/代码声明；[代码](https://github.com/tjaffrel/mofgen)已确认、未运行。正式版与旧预印本为同一研究，按正式版描述，不混用结果。
+
+### 实验室自主性的设计原则（2026-11-22 定向增补）
+
+[Enabling lab autonomy with reward functions and executable workflows](https://www.nature.com/articles/s42256-026-01339-0)，Nature Machine Intelligence，2026-11-20，**Perspective**。主张从仪器可执行动作、成本与观测约束构建实验室自主性，将假设转为可检验的实验足迹，并把奖励设计与决策相关信息效率作为闭环设计重点。这是设计原则的Perspective，不是新增系统的性能验证或通用自主发现保证。 本轮仅核验官方元数据与摘要，未通读或复现，不把观点文章当作系统研究。
 
 ## 计算机会议
 

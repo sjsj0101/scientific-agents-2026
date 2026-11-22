@@ -576,6 +576,39 @@
       "evidence_level": "selected-full-text",
       "verification_note_zh": "普通公开GET直接核验官方作者顺序、发表日期、DOI、摘要及代码声明；Web抓取遇cookie跳转，未绕过验证。代码仓库已打开、未执行。另读Discussion；正式版合成四种，旧预印本摘要为五种，本条按正式版，不重复计数或混用版本结果。",
       "arxiv_id": "2504.14110"
+    },
+    {
+      "id": "lab-autonomy-reward-workflows",
+      "title": "Enabling lab autonomy with reward functions and executable workflows",
+      "short_name": "Lab Autonomy Perspective",
+      "authors": [
+        "Sergei V. Kalinin",
+        "Boris N. Slautin",
+        "Yu Liu",
+        "Elham Foadian",
+        "Gerd Duscher",
+        "Mahshid Ahmadi",
+        "Timur Bazhirov"
+      ],
+      "year": 2026,
+      "venue": "Nature Machine Intelligence",
+      "publication_type": "perspective",
+      "publication_status": "published",
+      "publication_date": "2026-11-20",
+      "url": "https://www.nature.com/articles/s42256-026-01339-0",
+      "venue_reference_url": "https://www.nature.com/articles/s42256-026-01339-0",
+      "doi": "10.1038/s42256-026-01339-0",
+      "summary_zh": "主张从仪器可执行动作、成本与观测约束构建实验室自主性，将假设转为可检验的实验足迹，并把奖励设计与决策相关信息效率作为闭环设计重点。这是设计原则的Perspective，不是新增系统的性能验证或通用自主发现保证。",
+      "tags": [
+        "workflows",
+        "instrument-control",
+        "evaluation",
+        "perspective"
+      ],
+      "metadata_basis": "official-publisher-page",
+      "verified_on": "2026-11-22",
+      "evidence_level": "abstract",
+      "verification_note_zh": "普通公开GET直接核验七位作者顺序、Perspective类型、2026-11-20、DOI与摘要。Web抓取cookie跳转不可访问，未绕过验证。仅读摘要、未通读全文或复现实验；未确认本观点文章配套代码，不猜填。"
     }
   ],
   "incremental_updates": [
@@ -607,6 +640,13 @@
         "mofgen-agentic-materials"
       ],
       "scope_zh": "定向补接AutoDNA与新发表MOFGen；分别归Nature与Nature Computational Science，原20篇继承证据与2026-09-17基线不变。"
+    },
+    {
+      "checked_on": "2026-11-22",
+      "added_ids": [
+        "lab-autonomy-reward-workflows"
+      ],
+      "scope_zh": "定向新增正式Perspective，非新系统实证；原2026-09-17基线与旧记录核验日不变。"
     }
   ]
 }
